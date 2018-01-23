@@ -12,3 +12,4 @@ Project for
 Folders
 * Scripts: Scripts used in the project (+ NEAT scripts)
 * Slides & Doc: Slides and document about the IA
+* APK: Compiled apk for Android
