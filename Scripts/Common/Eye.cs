@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Representa un sensor óptico que utiliza raycasting */
+
 public class Eye {
 
     private int raysPerEye;
@@ -12,6 +14,8 @@ public class Eye {
     private bool debug;
     private bool follow;
 
+		// Representa las coordenadas de un rayo con respecto a un origen situado en el
+		// ojo.
     private class Ray
     {
         public float x;
@@ -31,27 +35,28 @@ public class Eye {
         GenerateRays();
     }
 
+		// Indica si debe detectar al jugador
     public void SetFollow(bool follow)
     {
         this.follow = follow;
     }
 
+		// Realiza el raycasting para cada rayo
     public List<double> Update()
     {
         List<double> results = new List<double>();
-        
+
         foreach (Ray ray in rays)
         {
             RaycastHit hitInfo;
             Vector3 from = obj.position;
-            //Vector3 to   = obj.position + obj.forward * distance + obj.up * ray.y + obj.right * ray.x;
-            Vector3 to = obj.position + obj.forward * ray.x + obj.right * ray.y;
+            Vector3 to   = obj.position + obj.forward * ray.x + obj.right * ray.y;
 
             bool hit = Physics.Linecast(from, to, out hitInfo);
             string tag = (hitInfo.transform == null) ? "" : hitInfo.transform.gameObject.tag;
-            
+
             results.Add(hit ? hitInfo.distance / ray.distance : 1);
-            
+
             results.Add((tag.Equals("Player") && follow) ? 1 : 0);
             results.Add(tag.Equals("Wall") ? 1 : 0);
 
@@ -71,6 +76,7 @@ public class Eye {
 
     private void GenerateRays()
     {
+			  // Genera los rayos en un cono plano
         float step = eyePhi / (raysPerEye - 1);
         float angle = eyePhi / -2;
 
@@ -84,8 +90,9 @@ public class Eye {
             rays.Add(ray);
         }
 
+				// Genera los rayos en un cono 3D
         /*float alpha = 1.6180339887f; // Golden Ratio
-        
+
         for (int k = 1; k < (raysPerEye + 1); ++k)
         {
             float r = Mathf.Sqrt(k - 0.5f) / Mathf.Sqrt(raysPerEye - 0.5f);

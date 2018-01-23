@@ -6,48 +6,29 @@ using SharpNeat.Phenomes;
 using SharpNeat.Genomes.Neat;
 using System.Xml;
 
-public class CrawlerPipo : UnitController
-{
+/* Este script se encarga de gestionar la IA de los enemigos. En este momento,
+solo permite el control de la vista */
 
+public class CrawlerPipo : MonoBehaviour
+{
     public int raysPerEye;
     public float eyesPhi;
     public float eyesDistance;
     public float speed;
     public float rotSpeed;
-    public int followStartRange;
-    private float elapsedTime;
-    public Material deadMaterial;
-    public Material searchingMat;
 
     private List<Eye> eyes;
-
-    /* Fitness */
-    private GameObject player;
-    private float time;
-    private int steps;
-    private int lastExploredCount;
-    private bool dead;
     private HashSet<Vector2> explored;
 
     /* SharpNeat */
-    private bool isRunning;
     private IBlackBox box;
 
     private void Start()
     {
         explored = new HashSet<Vector2>();
-        time = 0;
-        steps = 0;
-        lastExploredCount = 0;
-        elapsedTime = 0;
-        dead = false;
-        //isRunning = false;
         eyes = new List<Eye>();
-        //transform.position = new Vector3(Random.Range(minX * 0.9f, maxX * 0.9f), 2, Random.Range(minZ * 0.9f, maxZ * 0.9f));
-        //player = GameObject.FindGameObjectWithTag("player");
-        //player.GetComponent<PlayerTestController>().RandomPos();
 
-        foreach (Transform obj in transform)
+        foreach (Transform obj in transform) // Obtiene la posición de los ojos
         {
             if (obj.name.Equals("eye")) eyes.Add(new Eye(raysPerEye, eyesPhi, eyesDistance, obj));
         }
@@ -55,6 +36,7 @@ public class CrawlerPipo : UnitController
         ActivateFromFile();
     }
 
+		// Carga la red neuronal desde archivo
     private void ActivateFromFile()
     {
         NeatGenome genome = null;
@@ -75,96 +57,49 @@ public class CrawlerPipo : UnitController
 
     private void Update()
     {
-        
-        if (dead) return;
+        int offset = 0;
         Vector2 gridPos = new Vector2(Mathf.Round(transform.position.x / 3), Mathf.Round(transform.position.z / 3));
-        /*if (!isRunning)
-        {
-            foreach (Eye eye in eyes)
-                eye.Update();
-            return;
-        }*/
 
+				/********* INPUTS **********/
         ISignalArray inputArr = box.InputSignalArray;
-        inputArr[0] = Random.Range(0, 2);
-        inputArr[1] = explored.Contains(gridPos) ? 1 : -1;
-        //inputArr[1] = (elapsedTime / period) * 2f - 1f;
+        inputArr[offset++] = Random.Range(0, 2);
+        inputArr[offset++] = explored.Contains(gridPos) ? 1 : -1;
 
-        int start = 2;
-        bool behind = false;
         float minDist = 99999;
         foreach (Eye eye in eyes)
         {
-            eye.SetFollow((explored.Count > followStartRange));
+            eye.SetFollow(true); // Indica que si detecte al jugador
             List<double> rays = eye.Update();
 
             for (int i = 0; i < rays.Count; i += 3)
             {
-                inputArr[i + start + 0] = (float)rays[i + 0];
-                inputArr[i + start + 1] = (float)rays[i + 1];
-                inputArr[i + start + 2] = (float)rays[i + 2];
-                behind = rays[i + 1] == 1;
-                if (behind && (rays[i + 0] < minDist))
+                inputArr[i + offset + 0] = (float)rays[i + 0]; // Distance
+                inputArr[i + offset + 1] = (float)rays[i + 1]; // Player detected
+                inputArr[i + offset + 2] = (float)rays[i + 2]; // Wall detected
+
+                if ((rays[i + 1] == 1) && (rays[i + 0] < minDist))
                     minDist = (float)rays[i + 0];
             }
-            start += rays.Count;
+            offset += rays.Count;
         }
 
-        //
+				/********* ACTIVATE **********/
         box.Activate();
+
+				/********* OUTPUTS **********/
         ISignalArray outputArr = box.OutputSignalArray;
 
+				// Cambia la función distancia para que no sea una función lineal (sino una sigmoide)
         minDist = (minDist < 0.9) ? (10f * minDist / Mathf.Sqrt(1f + 100f * minDist * minDist)) : 1;
         if (minDist < 0.2) minDist = 0;
 
+				// El valor de la rotación, cambia la función para que se comporte no como lineal sino como una cúbica
         float rotation = (float)outputArr[0] * (float)outputArr[0] * (float)outputArr[0];
 
+				/********* MOVEMENT **********/
         transform.Rotate(Vector3.up, (rotation * 2 - 1) * rotSpeed);
         transform.position += transform.forward * Time.fixedDeltaTime * speed * minDist;
 
-        if (behind)
-            time += Time.fixedDeltaTime;
-
         explored.Add(gridPos);
-
-        /*if (++steps == 200)
-        {
-            if (explored.Count == lastExploredCount)
-                Kill();
-            steps = 0;
-            lastExploredCount = explored.Count;
-        }*/
     }
-
-    public override void Stop()
-    {
-        //isRunning = false;
-    }
-
-    public override void Activate(IBlackBox box)
-    {
-        this.box = box;
-        //isRunning = true;
-    }
-
-    public override float GetFitness()
-    {
-
-        return (explored.Count > followStartRange) ? ((explored.Count - followStartRange) / 2 + followStartRange + time) : explored.Count;
-        //return (time < 2) ? 0 : time;
-    }
-
-    private void Kill()
-    {
-        dead = true;
-        GetComponent<Renderer>().material = deadMaterial;
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-
-        /*if (collision.collider.tag.Equals("wall"))
-            Kill();*/
-    }
-
 }
