@@ -43,18 +43,20 @@ Una vez comience el juego, nuestro objetivo será escapar de los enemigos mientr
 
 Si nos atrapa un enemigo o nuestro HP (puntos de vida) llega a 0, habremos muerto y aparecerá la pantalla de Game Over que nos permitirá salir del juego o volver al menú principal.
 
-## Hitos conseguidos
+## Hitos conseguidos y aspectos destacados
 * Diseño de tres escenarios  propios (granero, hospital y nave) con menús (inicio, fin de partida y.pantalla de carga).
   * Sonidos ambientales (música y personajes) y efectos.
   * Utilización de sistemas de partículas (fuego, puntos y vidas).
 * Diseño de personajes y animaciones.
+  * Distintos enemigos para cada escenario.
 * Movimiento del personaje para exploración y persecución mediante la red neuronal.
+  * Comportamiento pseudoaleatorio para los enemigos en cada partida.
 * Sensor de vista y oído.
 * Utilización de sensores de Android.
   * Acelerómetro: el personaje que controlamos se agacha si la persona jugando también lo hace, reduciendo su velocidad y sonido emitido.
   * Micrófono: se detecta el sonido por micrófono y su rango en el escenario.
 * Eventos implementados mediante controlador.
-  * Recogida de vidas y puntos.
+  * Recogida de vidas y puntos (aparecen de nuevo de forma aleatoria en las posibles posiciones).
   * Activación de trampas.
   * Muerte del jugador.
   * Jugador atrapado por enemigo.
