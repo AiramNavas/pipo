@@ -37,6 +37,61 @@ Una vez comience el juego, nuestro objetivo será escapar de los enemigos mientr
 
 Si nos atrapa un enemigo o nuestro HP (puntos de vida) llega a 0, habremos muerto y aparecerá la pantalla de Game Over que nos permitirá salir del juego o volver al menú principal.
 
+## Hitos conseguidos
+* Diseño de tres escenarios  propios (granero, hospital y nave) con menús (inicio, fin de partida y.pantalla de carga).
+  * Sonidos ambientales (música y personajes) y efectos.
+  * Utilización de sistemas de partículas (fuego, puntos y vidas).
+* Diseño de personajes y animaciones.
+* Movimiento del personaje para exploración y persecución mediante la red neuronal.
+* Sensor de vista y oído.
+* Utilización de sensores de Android.
+  * Acelerómetro: el personaje que controlamos se agacha si la persona jugando también lo hace, reduciendo su velocidad y sonido emitido.
+  * Micrófono: se detecta el sonido por micrófono y su rango en el escenario.
+* Eventos implementados mediante controlador.
+  * Recogida de vidas y puntos.
+  * Activación de trampas.
+  * Muerte del jugador.
+  * Jugador atrapado por enemigo.
+* Realidad Virtual en Google Cardboard.
+* Selección de opción mediante retícula.
+* Control de cambio de luces.
+* Control de disparidad en la percepción entre el mundo real y el juego.
+
+## Reparto de tareas
+
+* Kevin
+  * Búsqueda de assets.
+  * Animación.
+  * Decoración de escenarios.
+  * Interacción con botones en VR.
+  * Uso de sensores (acelerómetro).
+  * Diseño de pantalla de Game Over.
+* Airam
+  * Búsqueda de assets.
+  * Modelado.
+  * Diseño y decoración de escenarios.
+  * Unión de escenas.
+  * Uso de sensores (micrófono).
+  * Implementación del sensor de oído.
+  * Adición de sonidos ambientales y música.
+  * Diseño de pantalla de Game Over.
+* Pamela
+  * Búsqueda de assets.
+  * Control de eventos.
+  * Diseño de trampas, vidas y puntos.
+  * Diseño y decoración de mapas.
+  * Diseño de pantalla de carga.
+  * Control de cambio de escena.
+* Jorge
+  * Búsqueda de assets.
+  * Configuración de las redes neuronales.
+  * Entrenamiento de las redes neuronales.
+  * Diseño del mapa de entrenamiento de las redes neuronales.
+  * Programación de scripts ambientales.
+  * Implementación del sensor de vista.
+  * Búsqueda de assets de sonidos ambientales.
+
+
 ## Autores
 * Pamela Jiménez Rebenaque alu0100894325@ull.edu.es
 * Airam Manuel Navas Simón alu0100618426@ull.edu.es
