@@ -96,3 +96,8 @@ Si nos atrapa un enemigo o nuestro HP (puntos de vida) llega a 0, habremos muert
   * Programación de scripts ambientales.
   * Implementación del sensor de vista.
   * Búsqueda de assets de sonidos ambientales.
+
+## Algunas imágenes
+![Img0](https://rawgit.com/Ediolot/pipo/master/Images/img0.png)
+![Img1](https://rawgit.com/Ediolot/pipo/master/Images/img1.png)
+![Img2](https://rawgit.com/Ediolot/pipo/master/Images/img2.png)
