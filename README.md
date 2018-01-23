@@ -57,7 +57,12 @@ Si nos atrapa un enemigo o nuestro HP (puntos de vida) llega a 0, habremos muert
 * Control de cambio de luces.
 * Control de disparidad en la percepción entre el mundo real y el juego.
 
-## Reparto de tareas
+## Autores y reparto de tareas
+
+* Pamela Jiménez Rebenaque alu0100894325@ull.edu.es
+* Airam Manuel Navas Simón alu0100618426@ull.edu.es
+* Kevin Díaz Marrero       alu0100880625@ull.edu.es
+* Jorge Sierra Acosta      alu0100896282@ull.edu.es
 
 * Kevin
   * Búsqueda de assets.
@@ -90,10 +95,3 @@ Si nos atrapa un enemigo o nuestro HP (puntos de vida) llega a 0, habremos muert
   * Programación de scripts ambientales.
   * Implementación del sensor de vista.
   * Búsqueda de assets de sonidos ambientales.
-
-
-## Autores
-* Pamela Jiménez Rebenaque alu0100894325@ull.edu.es
-* Airam Manuel Navas Simón alu0100618426@ull.edu.es
-* Kevin Díaz Marrero       alu0100880625@ull.edu.es
-* Jorge Sierra Acosta      alu0100896282@ull.edu.es
