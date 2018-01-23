@@ -29,7 +29,7 @@ Dispondrán, de varias redes neuronales que no serán creadas de forma arbitrari
 
 La utilización de esta aplicación es sencilla.
 
-Para su instalación, solo debemos descargar el apk que se encuentra en el repositorio en nuestro móvil e instalarla. Además de las gafas, se necesita un GamePad conectado al dispositivo móvil para poder desplazarnos en el videojuego y podremos agacharnos en el juego agachándonos físicamente gracias al acelerómetro del móvil.
+Para su instalación, solo debemos descargar el apk que se encuentra en el repositorio en nuestro móvil e instalarla. Además de las gafas, se necesita un GamePad conectado al dispositivo móvil para poder desplazarnos en el videojuego y podremos agacharnos en el juego agachándonos físicamente gracias al acelerómetro del móvil. Además producir sonido por el micrófono podrá ser detectado por los enemigos dentro del juego.
 
 Al ejecutar, aparece un menú con los tres escenarios a los que podemos acceder. Para seleccionar uno, debemos situar el puntero de la retícula en uno de ellos durante unos segundos. Tras esto, aparecerá una pantalla de carga.
 
