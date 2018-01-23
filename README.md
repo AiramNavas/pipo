@@ -15,8 +15,8 @@ Program for the Investigation of Pursuing Objectives (in different creatures)
 [Training Unity project](https://drive.google.com/open?id=1qarURAvm1PKqzQ4ALgHL78Q3IwuzzoCy)
 
 ## Carpetas
-* Scripts: Scripts used in the project (+ NEAT scripts)
-* Slides & Doc: Slides and document about the IA
+* Scripts: Scripts usados en el proyecto (+ NEAT scripts)
+* Slides & Doc: Diapositivas e informe utilizado en Sistemas Inteligentes
 
 ## Resumen del proyecto
 El proyecto se basa en la creación de un juego de realidad virtual controlado con un mando, donde el jugador deberá recorrer distintos escenarios (similares a laberintos), evadiendo trampas y enemigos, y recogiendo vidas y puntos.
