@@ -36,8 +36,8 @@ public class DelegateHandler : MonoBehaviour {
     public Transform[] spawnLives; // Array de posiciones donde pueden aparecer las vidas.
 
 
-    public AudioClip healSound;
-    public AudioClip trampSound;
+    public AudioClip healSound; // Audio reservado para el sonido al coger una cura
+    public AudioClip trampSound; // Audio reservado para el sonido al coger un punto
 
     //public delegate void OnCharacterBends();
     //public event OnCharacterBends onCharacterBends;
