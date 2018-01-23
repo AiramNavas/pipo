@@ -36,3 +36,9 @@ Al ejecutar, aparece un menú con los tres escenarios a los que podemos acceder.
 Una vez comience el juego, nuestro objetivo será escapar de los enemigos mientras esquivamos las trampas ocultas en el suelo (que nos restarán vida si las pisamos), recogemos contenedores de vida (que nos sumarán vida hasta un total de 100 puntos de vida), y conseguimos puntos.
 
 Si nos atrapa un enemigo o nuestro HP (puntos de vida) llega a 0, habremos muerto y aparecerá la pantalla de Game Over que nos permitirá salir del juego o volver al menú principal.
+
+## Autores
+* Pamela Jiménez Rebenaque alu0100894325@ull.edu.es
+* Airam Manuel Navas Simón alu0100618426@ull.edu.es
+* Kevin Díaz Marrero       alu0100880625@ull.edu.es
+* Jorge Sierra Acosta      alu0100896282@ull.edu.es
