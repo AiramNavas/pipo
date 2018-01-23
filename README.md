@@ -5,6 +5,12 @@ Program for the Investigation of Pursuing Objectives (in different creatures)
 * Sistemas Inteligentes
 * Interfaces Inteligentes
 
+## Autores
+* Pamela Jiménez Rebenaque alu0100894325@ull.edu.es
+* Airam Manuel Navas Simón alu0100618426@ull.edu.es
+* Kevin Díaz Marrero       alu0100880625@ull.edu.es
+* Jorge Sierra Acosta      alu0100896282@ull.edu.es
+
 ## Archivos
 [APK](https://drive.google.com/open?id=17g7tYbH74dhN2F856hqu6T8tr_TGyBYk)
 
@@ -58,11 +64,6 @@ Si nos atrapa un enemigo o nuestro HP (puntos de vida) llega a 0, habremos muert
 * Control de disparidad en la percepción entre el mundo real y el juego.
 
 ## Autores y reparto de tareas
-
-* Pamela Jiménez Rebenaque alu0100894325@ull.edu.es
-* Airam Manuel Navas Simón alu0100618426@ull.edu.es
-* Kevin Díaz Marrero       alu0100880625@ull.edu.es
-* Jorge Sierra Acosta      alu0100896282@ull.edu.es
 
 * Kevin
   * Búsqueda de assets.
