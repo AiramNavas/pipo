@@ -66,38 +66,38 @@ If an enemy or our HP (life points) catches up to us, we will have died and the 
 * Control of disparity in perception between the real world and the game.
 
 ## Authors and distribution of tasks
-.
+
 * Kevin
- * Search for assets.
- * Animation
- * Decoration of scenarios.
- * Interaction with buttons in VR.
- * Use of sensors (accelerometer).
- * Game Over screen design.
+  * Search for assets.
+  * Animation
+  * Decoration of scenarios.
+  * Interaction with buttons in VR.
+  * Use of sensors (accelerometer).
+  * Game Over screen design.
 * Airam
- * Search for assets.
- * Modeling
- * Design and decoration of scenarios.
- * Union of scenes.
- * Use of sensors (microphone).
- * Implementation of the ear sensor.
- * Addition of ambient sounds and music.
- * Game Over screen design.
+  * Search for assets.
+  * Modeling
+  * Design and decoration of scenarios.
+  * Union of scenes.
+  * Use of sensors (microphone).
+  * Implementation of the ear sensor.
+  * Addition of ambient sounds and music.
+  * Game Over screen design.
 * Pamela
- * Search for assets.
- * Event control.
- * Design of traps, lives and points.
- * Design and decoration of maps.
- * Load screen design.
- * Scene change control.
+  * Search for assets.
+  * Event control.
+  * Design of traps, lives and points.
+  * Design and decoration of maps.
+  * Load screen design.
+  * Scene change control.
 * Jorge
- * Search for assets.
- * Configuration of neural networks.
- * Training of neural networks.
- * Design of the training map of neural networks.
- * Programming environmental scripts.
- * Implementation of the sight sensor.
- * Search for assets of environmental sounds.
+  * Search for assets.
+  * Configuration of neural networks.
+  * Training of neural networks.
+  * Design of the training map of neural networks.
+  * Programming environmental scripts.
+  * Implementation of the sight sensor.
+  * Search for assets of environmental sounds.
 
 ## Algunas imágenes
 ![Img0](https://rawgit.com/Ediolot/pipo/master/Images/img0.png)
