@@ -1,17 +1,17 @@
 # PIPO
 Program for the Investigation of Pursuing Objectives (in different creatures)
 
-## Proyecto para
-* Sistemas Inteligentes
-* Interfaces Inteligentes
+## Project for
+* Intelligent Systems
+* Intelligent Interfaces
 
-## Autores
+## Authors
 * Pamela Jiménez Rebenaque alu0100894325@ull.edu.es
 * Airam Manuel Navas Simón alu0100618426@ull.edu.es
 * Kevin Díaz Marrero       alu0100880625@ull.edu.es
 * Jorge Sierra Acosta      alu0100896282@ull.edu.es
 
-## Archivos
+## Records
 [APK](https://drive.google.com/open?id=17g7tYbH74dhN2F856hqu6T8tr_TGyBYk)
 
 [UnityNEAT](https://github.com/lordjesus/UnityNEAT)
@@ -20,84 +20,84 @@ Program for the Investigation of Pursuing Objectives (in different creatures)
 
 [Training Unity project](https://drive.google.com/open?id=1qarURAvm1PKqzQ4ALgHL78Q3IwuzzoCy)
 
-## Carpetas
-* Scripts: Scripts usados en el proyecto (+ NEAT scripts)
-* Slides & Doc: Diapositivas e informe utilizado en Sistemas Inteligentes
+## Folders
+* Scripts: Scripts used in the project (+ NEAT scripts)
+* Slides & Doc: Slides and report used in Intelligent Systems
 
-## Resumen del proyecto
-El proyecto se basa en la creación de un juego de realidad virtual controlado con un mando, donde el jugador deberá recorrer distintos escenarios (similares a laberintos), evadiendo trampas y enemigos, y recogiendo vidas y puntos.
+## Project summary
+The project is based on the creation of a controlled virtual reality game with a command, where the player must go through different scenarios (similar to labyrinths), avoiding traps and enemies, and collecting lives and points.
 
-En concreto, nos perseguirán distintas criaturas que contarán con dos sentidos para analizar su entorno: vista y oído y posteriormente se ha barajado la posibilidad de añadir el sentido del olfato.
+Specifically, we will be chased by different creatures that will have two senses to analyze their environment: sight and hearing and then the possibility of adding the sense of smell has been considered.
 
-Dispondrán, de varias redes neuronales que no serán creadas de forma arbitraria, sino a través de algoritmos genéticos.
+They will have several neural networks that will not be created arbitrarily, but through genetic algorithms.
 
-## Cuestiones de uso:
+## Questions of use:
 
-La utilización de esta aplicación es sencilla.
+The use of this application is simple.
 
-Para su instalación, solo debemos descargar el apk que se encuentra en el repositorio en nuestro móvil e instalarla. Además de las gafas, se necesita un GamePad conectado al dispositivo móvil para poder desplazarnos en el videojuego y podremos agacharnos en el juego agachándonos físicamente gracias al acelerómetro del móvil. Además producir sonido por el micrófono podrá ser detectado por los enemigos dentro del juego.
+For installation, just download the apk that is in the repository on our mobile and install it. In addition to the glasses, you need a GamePad connected to the mobile device to move around in the game and we can crouch in the game by physically bending over thanks to the mobile accelerometer. In addition, producing sound through the microphone can be detected by the enemies within the game.
 
-Al ejecutar, aparece un menú con los tres escenarios a los que podemos acceder. Para seleccionar uno, debemos situar el puntero de la retícula en uno de ellos durante unos segundos. Tras esto, aparecerá una pantalla de carga.
+When executing, a menu appears with the three scenarios to which we can access. To select one, we must place the pointer of the grid in one of them for a few seconds. After this, a loading screen will appear.
 
-Una vez comience el juego, nuestro objetivo será escapar de los enemigos mientras esquivamos las trampas ocultas en el suelo (que nos restarán vida si las pisamos), recogemos contenedores de vida (que nos sumarán vida hasta un total de 100 puntos de vida), y conseguimos puntos.
+Once the game starts, our objective will be to escape the enemies while we avoid the hidden traps on the ground (which will take away life if we step on them), we collect life containers (that will add life to a total of 100 life points), and we get points.
 
-Si nos atrapa un enemigo o nuestro HP (puntos de vida) llega a 0, habremos muerto y aparecerá la pantalla de Game Over que nos permitirá salir del juego o volver al menú principal.
+If an enemy or our HP (life points) catches up to us, we will have died and the Game Over screen will appear that will allow us to exit the game or return to the main menu.
 
-## Hitos conseguidos y aspectos destacados
-* Diseño de tres escenarios  propios (granero, hospital y nave) con menús (inicio, fin de partida y.pantalla de carga).
-  * Sonidos ambientales (música y personajes) y efectos.
-  * Utilización de sistemas de partículas (fuego, puntos y vidas).
-* Diseño de personajes y animaciones.
-  * Distintos enemigos para cada escenario.
-* Movimiento del personaje para exploración y persecución mediante la red neuronal.
-  * Comportamiento pseudoaleatorio para los enemigos en cada partida.
-* Sensor de vista y oído.
-* Utilización de sensores de Android.
-  * Acelerómetro: el personaje que controlamos se agacha si la persona jugando también lo hace, reduciendo su velocidad y sonido emitido.
-  * Micrófono: se detecta el sonido por micrófono y su rango en el escenario.
-* Eventos implementados mediante controlador.
-  * Recogida de vidas y puntos (aparecen de nuevo de forma aleatoria en las posibles posiciones).
-  * Activación de trampas.
-  * Muerte del jugador.
-  * Jugador atrapado por enemigo.
-* Realidad Virtual en Google Cardboard.
-* Selección de opción mediante retícula.
-* Control de cambio de luces.
-* Control de disparidad en la percepción entre el mundo real y el juego.
+## Milestones achieved and highlights
+* Design of three own scenarios (barn, hospital and ship) with menus (start, end of departure and load screen).
+  * Ambient sounds (music and characters) and effects.
+  * Use of particle systems (fire, points and lives).
+* Character design and animations.
+  * Different enemies for each scenario.
+* Movement of the character for exploration and pursuit through the neural network.
+  * Pseudorandom behavior for enemies in each game.
+* Sight and hearing sensor.
+* Use of Android sensors.
+  * Accelerometer: the character we control crouches if the person playing also does so, reducing their speed and sound emitted.
+  * Microphone: the sound is detected by microphone and its range on the stage.
+* Events implemented by controller.
+  * Collection of lives and points (appear again randomly in the possible positions).
+  * Activation of traps.
+  * Death of the player.
+  * Player caught by enemy.
+* Virtual Reality in Google Cardboard.
+* Option selection by reticle.
+* Control of change of lights.
+* Control of disparity in perception between the real world and the game.
 
-## Autores y reparto de tareas
+## Authors and distribution of tasks
 
 * Kevin
-  * Búsqueda de assets.
-  * Animación.
-  * Decoración de escenarios.
-  * Interacción con botones en VR.
-  * Uso de sensores (acelerómetro).
-  * Diseño de pantalla de Game Over.
+  * Search for assets.
+  * Animation
+  * Decoration of scenarios.
+  * Interaction with buttons in VR.
+  * Use of sensors (accelerometer).
+  * Game Over screen design.
 * Airam
-  * Búsqueda de assets.
-  * Modelado.
-  * Diseño y decoración de escenarios.
-  * Unión de escenas.
-  * Uso de sensores (micrófono).
-  * Implementación del sensor de oído.
-  * Adición de sonidos ambientales y música.
-  * Diseño de pantalla de Game Over.
+  * Search for assets.
+  * Modeling
+  * Design and decoration of scenarios.
+  * Union of scenes.
+  * Use of sensors (microphone).
+  * Implementation of the ear sensor.
+  * Addition of ambient sounds and music.
+  * Game Over screen design.
 * Pamela
-  * Búsqueda de assets.
-  * Control de eventos.
-  * Diseño de trampas, vidas y puntos.
-  * Diseño y decoración de mapas.
-  * Diseño de pantalla de carga.
-  * Control de cambio de escena.
+  * Search for assets.
+  * Event control.
+  * Design of traps, lives and points.
+  * Design and decoration of maps.
+  * Load screen design.
+  * Scene change control.
 * Jorge
-  * Búsqueda de assets.
-  * Configuración de las redes neuronales.
-  * Entrenamiento de las redes neuronales.
-  * Diseño del mapa de entrenamiento de las redes neuronales.
-  * Programación de scripts ambientales.
-  * Implementación del sensor de vista.
-  * Búsqueda de assets de sonidos ambientales.
+  * Search for assets.
+  * Configuration of neural networks.
+  * Training of neural networks.
+  * Design of the training map of neural networks.
+  * Programming environmental scripts.
+  * Implementation of the sight sensor.
+  * Search for assets of environmental sounds.
 
 ## Algunas imágenes
 ![Img0](https://rawgit.com/Ediolot/pipo/master/Images/img0.png)
