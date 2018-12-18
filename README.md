@@ -66,7 +66,7 @@ If an enemy or our HP (life points) catches up to us, we will have died and the 
 * Control of disparity in perception between the real world and the game.
 
 ## Authors and distribution of tasks
-
+.
 * Kevin
  * Search for assets.
  * Animation
