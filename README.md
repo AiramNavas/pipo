@@ -45,8 +45,8 @@ If an enemy or our HP (life points) catches up to us, we will have died and the 
 
 ## Milestones achieved and highlights
 * Design of three own scenarios (barn, hospital and ship) with menus (start, end of departure and load screen).
-  * Ambient sounds (music and characters) and effects.
-  * Use of particle systems (fire, points and lives).
+  * Ambient sounds (music and characters) and effects.
+  * Use of particle systems (fire, points and lives).
 * Character design and animations.
   * Different enemies for each scenario.
 * Movement of the character for exploration and pursuit through the neural network.
