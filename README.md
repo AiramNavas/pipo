@@ -48,18 +48,18 @@ If an enemy or our HP (life points) catches up to us, we will have died and the 
   * Ambient sounds (music and characters) and effects.
   * Use of particle systems (fire, points and lives).
 * Character design and animations.
- * Different enemies for each scenario.
+  * Different enemies for each scenario.
 * Movement of the character for exploration and pursuit through the neural network.
- * Pseudorandom behavior for enemies in each game.
+  * Pseudorandom behavior for enemies in each game.
 * Sight and hearing sensor.
 * Use of Android sensors.
- * Accelerometer: the character we control crouches if the person playing also does so, reducing their speed and sound emitted.
+  * Accelerometer: the character we control crouches if the person playing also does so, reducing their speed and sound emitted.
   * Microphone: the sound is detected by microphone and its range on the stage.
 * Events implemented by controller.
- * Collection of lives and points (appear again randomly in the possible positions).
- * Activation of traps.
- * Death of the player.
- * Player caught by enemy.
+  * Collection of lives and points (appear again randomly in the possible positions).
+  * Activation of traps.
+  * Death of the player.
+  * Player caught by enemy.
 * Virtual Reality in Google Cardboard.
 * Option selection by reticle.
 * Control of change of lights.
