@@ -54,12 +54,12 @@ If an enemy or our HP (life points) catches up to us, we will have died and the 
 * Sight and hearing sensor.
 * Use of Android sensors.
  * Accelerometer: the character we control crouches if the person playing also does so, reducing their speed and sound emitted.
- * Microphone: the sound is detected by microphone and its range on the stage.
+  * Microphone: the sound is detected by microphone and its range on the stage.
 * Events implemented by controller.
- * Collection of lives and points (appear again randomly in the possible positions).
- * Activation of traps.
- * Death of the player.
- * Player caught by enemy.
+ * Collection of lives and points (appear again randomly in the possible positions).
+ * Activation of traps.
+ * Death of the player.
+ * Player caught by enemy.
 * Virtual Reality in Google Cardboard.
 * Option selection by reticle.
 * Control of change of lights.
@@ -68,36 +68,36 @@ If an enemy or our HP (life points) catches up to us, we will have died and the 
 ## Authors and distribution of tasks
 
 * Kevin
- * Search for assets.
- * Animation
- * Decoration of scenarios.
- * Interaction with buttons in VR.
- * Use of sensors (accelerometer).
- * Game Over screen design.
+ * Search for assets.
+ * Animation
+ * Decoration of scenarios.
+ * Interaction with buttons in VR.
+ * Use of sensors (accelerometer).
+ * Game Over screen design.
 * Airam
- * Search for assets.
- * Modeling
- * Design and decoration of scenarios.
- * Union of scenes.
- * Use of sensors (microphone).
- * Implementation of the ear sensor.
- * Addition of ambient sounds and music.
- * Game Over screen design.
+ * Search for assets.
+ * Modeling
+ * Design and decoration of scenarios.
+ * Union of scenes.
+ * Use of sensors (microphone).
+ * Implementation of the ear sensor.
+ * Addition of ambient sounds and music.
+ * Game Over screen design.
 * Pamela
- * Search for assets.
- * Event control.
- * Design of traps, lives and points.
- * Design and decoration of maps.
- * Load screen design.
- * Scene change control.
+ * Search for assets.
+ * Event control.
+ * Design of traps, lives and points.
+ * Design and decoration of maps.
+ * Load screen design.
+ * Scene change control.
 * Jorge
- * Search for assets.
- * Configuration of neural networks.
- * Training of neural networks.
- * Design of the training map of neural networks.
- * Programming environmental scripts.
- * Implementation of the sight sensor.
- * Search for assets of environmental sounds.
+ * Search for assets.
+ * Configuration of neural networks.
+ * Training of neural networks.
+ * Design of the training map of neural networks.
+ * Programming environmental scripts.
+ * Implementation of the sight sensor.
+ * Search for assets of environmental sounds.
 
 ## Algunas imágenes
 ![Img0](https://rawgit.com/Ediolot/pipo/master/Images/img0.png)
